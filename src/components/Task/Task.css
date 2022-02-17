@@ -1,0 +1,29 @@
+.task {
+	background-color: #eeeeee;
+	width: 40%;
+	height: 6rem;
+	margin-top: 2rem;
+	border-radius: 0.5rem;
+	display: flex;
+	padding: 1.2rem;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.7rem;
+}
+
+.done {
+	border: 3px solid #65c18c;
+}
+
+.task-name {
+	justify-self: flex-start;
+	align-self: center;
+}
+
+.task-buttons {
+	display: flex;
+}
+
+.task-buttons > * {
+	margin: 0.5rem;
+}

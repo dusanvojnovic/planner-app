@@ -1,0 +1,16 @@
+.main-box__button {
+	background-color: #e5e3c9;
+	border: none;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	border-radius: 2rem 2rem 0 0;
+}
+
+.main-box__button:hover {
+	background-color: #cceec7;
+}
+
+.main-box__button:focus {
+	background-color: #b4cfb0;
+}
