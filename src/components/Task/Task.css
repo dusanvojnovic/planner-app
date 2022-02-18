@@ -12,7 +12,8 @@
 }
 
 .done {
-	border: 3px solid #65c18c;
+	background-color: #65c18c;
+	/* color: #eeeeee; */
 }
 
 .task-name {

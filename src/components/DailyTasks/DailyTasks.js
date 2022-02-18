@@ -23,7 +23,7 @@ const DailyTask = (props) => {
 				</IconContext.Provider>
 			</div>
 			{props.tasks.map((task) => (
-				<Task taskName={task} />
+				<Task taskName={task} key={task} />
 			))}
 		</div>
 	);
