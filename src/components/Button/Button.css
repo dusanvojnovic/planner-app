@@ -1,7 +1,12 @@
 .button {
-	padding: 0.8rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	cursor: pointer;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.new-task__button {
+  margin: 0.5rem auto;
+  justify-content: center;
+  width: 6rem;
 }

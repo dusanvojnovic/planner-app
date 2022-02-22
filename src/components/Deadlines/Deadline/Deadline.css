@@ -1,0 +1,12 @@
+.deadline {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  width: 40%;
+  height: 10rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
