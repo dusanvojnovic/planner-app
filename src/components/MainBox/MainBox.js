@@ -5,6 +5,7 @@ import DailyTasks from '../Tasks/TaskList/TaskList';
 import MainBoxButton from './MainBoxButton';
 import './MainBox.css';
 import DeadlinesList from '../Deadlines/DeadlinesList/DeadlinesList';
+import Calendar from '../Calendar/Calendar';
 
 const tasks = ['idi u nabavku', 'uci react'];
 // const deadlines = [{ name: 'posalji cv u p3' }];
@@ -32,6 +33,7 @@ const MainBox = (props) => {
         <div>
           <MainBoxButton
             text="Calendar"
+            onClick={() => setActiveBox('calendar')}
             buttonClass={activeBox === 'calendar' ? 'active' : ''}
           />
         </div>
@@ -39,6 +41,7 @@ const MainBox = (props) => {
       <div className="main-box__content">
         {activeBox === 'dailyTask' && <DailyTasks tasks={tasks} />}
         {activeBox === 'deadlines' && <DeadlinesList />}
+        {activeBox === 'calendar' && <Calendar />}
       </div>
     </div>
   );
