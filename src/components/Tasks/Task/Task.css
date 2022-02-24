@@ -1,30 +1,30 @@
 .task {
-	background-color: #eeeeee;
-	width: 40%;
-	height: 6rem;
-	margin-top: 2rem;
-	border-radius: 0.5rem;
-	display: flex;
-	padding: 1.2rem;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 1.7rem;
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
+  width: 40%;
+  height: 6rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
 }
 
 .done {
-	background-color: #65c18c;
-	/* color: #eeeeee; */
+  background-color: #65c18c;
 }
 
 .task-name {
-	justify-self: flex-start;
-	align-self: center;
+  justify-self: flex-start;
+  align-self: center;
 }
 
 .task-buttons {
-	display: flex;
+  display: flex;
 }
 
 .task-buttons > * {
-	margin: 0.5rem;
+  margin: 0.5rem;
 }

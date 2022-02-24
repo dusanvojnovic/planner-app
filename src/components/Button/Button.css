@@ -1,18 +1,21 @@
 .button {
-	padding: 0.8rem;
-	display: flex;
-	align-items: center;
-	cursor: pointer;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--color-font);
+  border: 1px solid black;
+  border-radius: 0.5rem;
 }
 
 .new-task__button {
-	margin: 1rem auto;
-	justify-content: center;
-	width: 6rem;
+  margin: 1rem auto;
+  justify-content: center;
+  width: 6rem;
 }
 
 .modal__box-button {
-	width: 6rem;
-	justify-content: center;
-	padding: 0.5rem;
+  width: 6rem;
+  justify-content: center;
+  padding: 0.5rem;
 }

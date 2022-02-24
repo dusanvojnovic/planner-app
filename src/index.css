@@ -9,6 +9,11 @@
 html {
   /* This defines 1rem = 10px */
   font-size: 62.5%;
+  --color-primary: #a2d5f2;
+  --color-primary-light: #d2e4ee;
+  --color-primary-dark: #5baedf;
+  --color-secondary: #fafafa;
+  --color-tertiary: #07689f;
 }
 
 body {

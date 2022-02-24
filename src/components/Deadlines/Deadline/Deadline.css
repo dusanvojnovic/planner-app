@@ -1,5 +1,6 @@
 .deadline {
-  background-color: #eeeeee;
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;

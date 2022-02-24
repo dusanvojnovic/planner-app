@@ -7,44 +7,44 @@ import interactionPlugin from '@fullcalendar/interaction'; // needed for dayClic
 import BasicModal from '../Modal/Modal';
 
 const Calendar = () => {
-	const [openModal, setOpenModal] = useState(false);
-	const [date, setDate] = useState();
-	const calendarRef = useRef(null);
+  const [openModal, setOpenModal] = useState(false);
+  const [date, setDate] = useState();
+  const calendarRef = useRef(null);
 
-	const closeModalHandler = () => {
-		setOpenModal(false);
-	};
+  const closeModalHandler = () => {
+    setOpenModal(false);
+  };
 
-	const handleDateClick = (arg) => {
-		setOpenModal(true);
-		setDate(arg.dateStr);
-		// alert(new Date(arg.dateStr).toLocaleDateString('en-GB'));
-	};
+  const handleDateClick = (arg) => {
+    setOpenModal(true);
+    setDate(arg.dateStr);
+    // alert(new Date(arg.dateStr).toLocaleDateString('en-GB'));
+  };
 
-	const onEventAdded = (event) => {
-		let calendarApi = calendarRef.current.getApi();
-		calendarApi.addEvent(event);
-	};
+  const onEventAdded = (event) => {
+    let calendarApi = calendarRef.current.getApi();
+    calendarApi.addEvent(event);
+  };
 
-	return (
-		<>
-			{openModal && (
-				<BasicModal
-					onEventAdded={onEventAdded}
-					onCloseModal={closeModalHandler}
-					date={date}
-				/>
-			)}
-			<FullCalendar
-				plugins={[dayGridPlugin, interactionPlugin]}
-				ref={calendarRef}
-				dateClick={handleDateClick}
-				editable={true}
-				selectable={true}
-				eventColor='#000000'
-			/>
-		</>
-	);
+  return (
+    <>
+      {openModal && (
+        <BasicModal
+          onEventAdded={onEventAdded}
+          onCloseModal={closeModalHandler}
+          date={date}
+        />
+      )}
+      <FullCalendar
+        plugins={[dayGridPlugin, interactionPlugin]}
+        ref={calendarRef}
+        dateClick={handleDateClick}
+        editable={true}
+        selectable={true}
+        eventColor="var(--color-tertiary)"
+      />
+    </>
+  );
 };
 
 export default Calendar;
