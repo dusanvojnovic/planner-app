@@ -1,33 +1,69 @@
 .modal__box {
-  background-color: var(--color-primary-light);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30%;
-  height: 30%;
-  border: 2px solid #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+	background-color: var(--color-primary-light);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	height: 40%;
+	border: 2px solid #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .modal__box-inputs {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	/* justify-content: space-around; */
+	flex-direction: column;
 }
 
 .modal__box-inputs--title {
-  font-size: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	font-size: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .input {
-  width: 80%;
-  height: 2.5rem;
-  padding-left: 0.3rem;
-  margin-top: 0.7rem;
+	width: 80%;
+	height: 2.5rem;
+	padding-left: 0.3rem;
+	margin-top: 0.5rem;
+}
+
+.modal__box-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal__box-buttons-select {
+	width: 14rem;
+	/* margin: 0 5rem; */
+	margin-top: 2rem;
+	align-self: center;
+}
+
+.modal__box-buttons-select select {
+	height: 2.5rem;
+	width: 100%;
+	margin-bottom: 1rem;
+	color: white;
+}
+
+.option-red {
+	background-color: #ff1818;
+}
+
+.option-purple {
+	background-color: #2d31fa;
+}
+
+.option-blue {
+	background-color: #2666cf;
+}
+
+.option-black {
+	background-color: #000000;
 }

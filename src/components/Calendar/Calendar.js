@@ -7,44 +7,50 @@ import interactionPlugin from '@fullcalendar/interaction'; // needed for dayClic
 import BasicModal from '../Modal/Modal';
 
 const Calendar = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const [date, setDate] = useState();
-  const calendarRef = useRef(null);
+	const [openModal, setOpenModal] = useState(false);
+	const [date, setDate] = useState();
+	const [selectedColor, setSelectedColor] = useState();
+	const calendarRef = useRef(null);
 
-  const closeModalHandler = () => {
-    setOpenModal(false);
-  };
+	const closeModalHandler = () => {
+		setOpenModal(false);
+	};
 
-  const handleDateClick = (arg) => {
-    setOpenModal(true);
-    setDate(arg.dateStr);
-    // alert(new Date(arg.dateStr).toLocaleDateString('en-GB'));
-  };
+	const selectColor = (color) => {
+		setSelectedColor(color);
+	};
 
-  const onEventAdded = (event) => {
-    let calendarApi = calendarRef.current.getApi();
-    calendarApi.addEvent(event);
-  };
+	const handleDateClick = (arg) => {
+		setOpenModal(true);
+		setDate(arg.dateStr);
+		// alert(new Date(arg.dateStr).toLocaleDateString('en-GB'));
+	};
 
-  return (
-    <>
-      {openModal && (
-        <BasicModal
-          onEventAdded={onEventAdded}
-          onCloseModal={closeModalHandler}
-          date={date}
-        />
-      )}
-      <FullCalendar
-        plugins={[dayGridPlugin, interactionPlugin]}
-        ref={calendarRef}
-        dateClick={handleDateClick}
-        editable={true}
-        selectable={true}
-        eventColor="var(--color-tertiary)"
-      />
-    </>
-  );
+	const onEventAdded = (event) => {
+		let calendarApi = calendarRef.current.getApi();
+		calendarApi.addEvent({ ...event, color: selectedColor });
+	};
+
+	return (
+		<>
+			{openModal && (
+				<BasicModal
+					onEventAdded={onEventAdded}
+					onCloseModal={closeModalHandler}
+					selectColor={selectColor}
+					date={date}
+				/>
+			)}
+			<FullCalendar
+				plugins={[dayGridPlugin, interactionPlugin]}
+				ref={calendarRef}
+				dateClick={handleDateClick}
+				editable={true}
+				selectable={true}
+				// eventColor={selectedColor}
+			/>
+		</>
+	);
 };
 
 export default Calendar;
