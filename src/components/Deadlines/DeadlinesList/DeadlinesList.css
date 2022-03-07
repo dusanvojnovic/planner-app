@@ -9,3 +9,9 @@
 .deadlines-list__button {
   margin-top: 4rem;
 }
+
+@media only screen and (max-width: 56.25em) {
+  .deadlines-list__button {
+    margin-top: 1rem;
+  }
+}

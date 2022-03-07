@@ -11,3 +11,12 @@
   border-radius: 0.5rem;
   font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 56.25em) {
+  .deadline {
+    width: 70%;
+    height: 5rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+}

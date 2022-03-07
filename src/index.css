@@ -8,14 +8,30 @@
 
 html {
   /* This defines 1rem = 10px */
-  font-size: 62.5%;
-  --color-primary: #a2d5f2;
-  --color-primary-light: #d2e4ee;
-  --color-primary-dark: #5baedf;
+  /* font-size: 62.5%; */
+  font-family: 'Roboto';
+  --color-primary: #feece9;
+  --color-primary-light: #ccd1e4;
+  --color-primary-dark: #d4c7c4;
   --color-secondary: #fafafa;
-  --color-tertiary: #07689f;
+  --color-tertiary: #ca5f51;
+  --color-tertiary-dark: #e85454;
+  --color-text: #2f3a8f;
 }
 
 body {
   box-sizing: border-box;
+  color: var(--color-text);
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 80%;
+  }
 }

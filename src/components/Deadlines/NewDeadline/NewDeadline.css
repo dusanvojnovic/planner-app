@@ -15,10 +15,28 @@
 
 .new-deadline__input {
   width: 25%;
-  height: 3.5rem;
+  height: 2.5rem;
   padding-left: 0.5rem;
+  border-color: var(--color-text);
 }
 
 .new-deadline__calendar {
   width: 25%;
+  border-color: var(--color-text);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .new-deadline__label {
+    font-size: 1.5rem;
+  }
+
+  .new-deadline__input {
+    width: 60%;
+    height: 2.25rem;
+    padding-left: 0.5rem;
+  }
+
+  .new-deadline__calendar {
+    width: 60%;
+  }
 }

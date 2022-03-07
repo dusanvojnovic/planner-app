@@ -1,10 +1,11 @@
 .main-box {
   background-color: var(--color-primary-light);
   width: 80vw;
-  height: 90vh;
-  margin: 5vh auto;
+  height: 85vh;
+  margin: 10vh auto 0;
   border-radius: 10px;
   position: relative;
+  border: 1px solid var(--color-primary-light);
 }
 
 .main-box__buttons {
@@ -39,4 +40,11 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 .main-box__content::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main-box {
+    width: 100vw;
+    height: 90vh;
+  }
 }

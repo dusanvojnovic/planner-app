@@ -22,7 +22,7 @@ const DeadlinesList = (props) => {
       {!addNewDeadline ? (
         <div className="deadlines-list">
           <div className="deadlines-list__button">
-            <IconContext.Provider value={{ size: '2rem' }}>
+            <IconContext.Provider value={{ size: '1.5rem' }}>
               <Button onClick={() => setAddNewDeadline(true)}>
                 <BiPlusCircle />
                 &nbsp; new deadline

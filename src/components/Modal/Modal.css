@@ -1,69 +1,74 @@
 .modal__box {
-	background-color: var(--color-primary-light);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 30%;
-	height: 40%;
-	border: 2px solid #000;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
+  background-color: var(--color-primary-light);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 40%;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .modal__box-inputs {
-	display: flex;
-	/* justify-content: space-around; */
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.modal__box-inputs--title {
-	font-size: 1.25rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.modal__box-inputs--title,
+.modal__box-select--title {
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .input {
-	width: 80%;
-	height: 2.5rem;
-	padding-left: 0.3rem;
-	margin-top: 0.5rem;
+  width: 80%;
+  height: 1.75rem;
+  padding-left: 0.3rem;
+  margin-top: 0.5rem;
+  border-color: var(--color-text);
 }
 
-.modal__box-buttons {
-	display: flex;
-	flex-direction: column;
+.modal__box-select {
+  width: 14rem;
+  align-self: center;
+  font-size: 1.25rem;
 }
 
-.modal__box-buttons-select {
-	width: 14rem;
-	/* margin: 0 5rem; */
-	margin-top: 2rem;
-	align-self: center;
+.modal__box-select select {
+  height: 1.75rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-color: var(--color-text);
 }
 
-.modal__box-buttons-select select {
-	height: 2.5rem;
-	width: 100%;
-	margin-bottom: 1rem;
-	color: white;
+.modal__box-button {
+  width: 8rem;
 }
 
-.option-red {
-	background-color: #ff1818;
+/* .option-red {
+  background-color: #ff1818;
 }
 
 .option-purple {
-	background-color: #2d31fa;
+  background-color: #2d31fa;
 }
 
 .option-blue {
-	background-color: #2666cf;
+  background-color: #2666cf;
 }
 
 .option-black {
-	background-color: #000000;
+  background-color: #000000;
+} */
+
+@media only screen and (max-width: 37.5em) {
+  .modal__box {
+    width: 80%;
+  }
 }

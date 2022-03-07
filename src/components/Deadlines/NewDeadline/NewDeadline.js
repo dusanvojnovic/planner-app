@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { DatePickerInput } from 'rc-datepicker';
-
 import 'rc-datepicker/lib/style.css';
+
 import Button from '../../Button/Button';
 import './NewDeadline.css';
 
